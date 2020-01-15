@@ -110,6 +110,7 @@ else {cout<<"NO armstrong ";}
 
 */
 //REVERSE OF A NUMBER
+/*
 int main(){
 int n,temp{0},r;
 cout<<"enter an number ";
@@ -120,4 +121,16 @@ while(n>0){
     n=n/10;
 }
 cout<<"Reversed number is "<<temp<<endl;
+}
+*/
+//SWAP TWO NUMBER WITHOUT THIRD VARIABLE
+int main(){
+int a,b;
+cout<<"enter two number ";
+cin>>a>>b;
+a=a+b;
+b=a-b;
+a=a-b;
+cout<<a<<" "<<b;
+return 0;
 }
