@@ -84,6 +84,7 @@ if(temp==sum){
 else {cout<<"no"<<endl;}
 }
 */
+/*
 int main(){
 int n,r,temp,sum=0,arr[20]={0},i=0,countt=0;
 cout<<"enter the number ";
@@ -103,7 +104,20 @@ for(int k=0;k<20;k++){
 
     }
 }
-if(sum==n){cout<<"yes armstrong ";}
+if(sum!=n){cout<<"yes armstrong ";}
 else {cout<<"NO armstrong ";}
 }
 
+*/
+//REVERSE OF A NUMBER
+int main(){
+int n,temp{0},r;
+cout<<"enter an number ";
+cin>>n;
+while(n>0){
+    r=n%10;
+    temp=(temp*10)+r;
+    n=n/10;
+}
+cout<<"Reversed number is "<<temp<<endl;
+}
