@@ -124,6 +124,7 @@ cout<<"Reversed number is "<<temp<<endl;
 }
 */
 //SWAP TWO NUMBER WITHOUT THIRD VARIABLE
+/*
 int main(){
 int a,b;
 cout<<"enter two number ";
@@ -133,4 +134,81 @@ b=a-b;
 a=a-b;
 cout<<a<<" "<<b;
 return 0;
+}
+*/
+//MATRIX MULTIPLICATION
+/*
+int main(){
+int mat[5][5],mat1[5][5],mat[5][5];
+for(int i=0;i<5;i++){
+    for(int j=0;j<5;j++){
+        cout<<"enter the element for  "<<i<<" "<<j;
+        cin>>mat[i][j];
+    }
+}
+for(int i=0;i<5;i++){
+    for(int j=0;j<5;j++){
+        cout<<"enter the element for  "<<i<<" "<<j;
+        cin>>mat1[i][j];
+    }
+}
+for(int i{0};i<5;i++){
+    for(int j{0};j<5;j++){
+        mat2[i][j]=mat[i][j]*mat1[i][j];
+    }
+}
+}
+
+}
+*/
+int main(){
+long int num,sum=0;
+int r,re;
+cout<<"enter the number for convert it's string ";
+cin>>num;
+while(num>0){
+    re=num%10;
+    sum=sum*10+r;
+    num=num/10;
+}
+num=sum;
+while(num>0){
+r=num%10;
+switch(r){
+case 1:
+    cout<<"one"<<" ";
+    break;
+case 2:
+    cout<<"two"<<" ";
+    break;
+case 3:
+    cout<<"three"<<" ";
+    break;
+case 4:
+    cout<<"four"<<" ";
+    break;
+case 5:
+    cout<<"five"<<" ";
+    break;
+case 6:
+    cout<<"six"<<" ";
+    break;
+case 7:
+    cout<<"seven"<<" ";
+    break;
+case 8:
+    cout<<"eight"<<" ";
+    break;
+case 9:
+    cout<<"nine"<<" ";
+    break;
+case 0:
+    cout<<"zero"<<" ";
+    break;
+default:
+cout<<"ttT"<<endl;
+}
+num=num/10;
+}
+
 }
