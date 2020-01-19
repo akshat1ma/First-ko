@@ -1,4 +1,4 @@
-<!-- FIRST CSS CODE
+<!-- FIRST CSS CODE 
 <!DOCTYPE html>
 <html>
 <head>
@@ -235,3 +235,329 @@ p.highlight {
 </body>
 </html>
 -->
+<!--
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>THE PAGE</title>
+<style>
+    .highlight{
+        background-color: chocolate;
+        font-size:15px;
+    }
+    h.highlight{
+        background-color: aqua;
+        font-style: italic;
+    }
+    .highlight.mainpoint{
+        color:chartreuse;
+        background-color: skyblue;
+    }
+
+</style>
+<body>
+<p class="highlight">The oldest classical Greek and Latin writing had little or no space between words and could be written in boustrophedon (alternating directions). Over time, text direction (left to right) became standardized, and word dividers and terminal punctuation became common. The first way to divide sentences into groups was the original paragraphos, similar to an underscore at the beginning of the new group.[2] The Greek paragraphos evolved into the pilcrow (¶), which in English manuscripts in the Middle Ages can be seen inserted inline between sentences. The hedera leaf (e.g. ☙) has also been used in the same way.</p>
+<h class="highlight">Indented paragraphs demonstrated in the US Constitution</h>
+<p>    
+In ancient manuscripts, another means to divide sentences into paragraphs was a line break (newline) followed by an initial at the beginning of the next paragraph. An initial is an oversized capital letter, sometimes outdented beyond the margin of the text. This style can be seen, for example, in the original Old English manuscript of Beowulf. Outdenting is still used in English typography, though not commonly.[3] Modern English typography usually indicates a new paragraph by indenting the first line. This style can be seen in the (handwritten) United States Constitution from 1787. For additional ornamentation, a hedera leaf or other symbol can be added to the inter-paragraph whitespace, or put in the indentation space.</p>
+<p class="highlight mainpoint">    
+A second common modern English style is to use no indenting, but add vertical white space to create "block paragraphs." On a typewriter, a double carriage return produces a blank line for this purpose; professional typesetters (or word processing software) may put in an arbitrary vertical space by adjusting leading. This style is very common in electronic formats, such as on the World Wide Web and email. Wikipedia itself employs this format.[citation needed]
+</p>
+</body>
+</head>
+</html>
+-->
+<!-- ============================================================================================== -->
+<!--
+<!doctype html>
+<html>
+<head>
+<title>the page</title>
+<style>
+    section>li{
+    color: red;
+    font-size: 15px;
+    }
+    section li{
+        color:green;
+        font-size: 20px;
+    }
+</style>
+<body>
+<h1>the heading</h1>
+<section>
+    <ol>
+    <li>cake</li>
+    <li>milk</li>
+    <li>suger</li>
+    </ol>
+</section>
+<section>
+    <li>new</li>
+    <li>old</li>
+    <li>cheap</li>
+    <li>expensive</li>
+</section>
+</body>
+</head>
+</html>
+-->
+<!--
+<!doctype html>
+<html>
+<head>
+    <title>jdfjsdfj</title>
+
+<style>
+    div>div>p{color:blue;}
+</style>
+</head>
+<body>
+<div>
+    <div>
+    <div class"makeblue">
+         <p>dfdgsrgdrgr</p>
+        </div>
+    </div>
+<section class="makeblue">
+    <p>sdafasdadsasd</p>
+</section>
+</div>
+    
+    
+</body>
+</html>
+-->
+<!-- ====================PSEUDO SELECTOR===================== -->
+<!--
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Pseudo Class Selectors</title>
+<style>
+/* Styles go here. */
+header li {
+  list-style: none;
+}
+a:link, a:visited {
+  text-decoration: none;
+  background-color: green;
+  border: 1px solid blue;
+  color: black;
+  display:block;
+  width: 200px;
+  text-align: center;
+  margin-bottom: 1px;
+}
+
+a:hover, a:active {
+  background-color:brown;
+  color: purple;
+}
+
+header li:nth-child(3) {
+  font-size: 34px;
+}
+
+section div:nth-child(even) {
+  background-color: gray;
+}
+
+section div:nth-child(odd):hover {
+  background-color: green;
+  cursor: pointer;
+}
+
+</style>
+</head>
+<body>
+<h1>Pseudo Class Selectors</h1>
+
+<header>
+  <ul>
+    <li><a href="/">Home</a></li>
+    <li><a href="http://goo.gl/V0Wl6s" target="_blank">AngularJS Course</a></li>
+    <li><a href="http://www.facebook.com/CourseraWebDev" target="_blank">Facebook Fan Page</a></li>
+  </ul>
+</header>
+
+<section>
+  <div>DIV 1</div>
+  <div>DIV 2</div>
+  <div>DIV 3</div>
+  <div>DIV 4</div>
+  <div>DIV 5</div>
+  <div>DIV 6</div>
+  <div>DIV 7</div>
+  <div>DIV 8</div>
+  <div>DIV 9</div>
+  <div>DIV 10</div>
+  <div>DIV 11</div>
+  <div>DIV 12</div>
+  <div>DIV 13</div>
+  <div>DIV 14</div>
+  <div>DIV 15</div>
+  <div>DIV 16</div>
+  <div>DIV 17</div>
+  <div>DIV 18</div>>
+
+  <div>DIV 19</div>
+  <div>DIV 20</div>
+</section>
+
+</body>
+</html>
+-->
+<!-- ===============STYLE PLACEMENT====================================== -->
+<!--
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Style Placement</title>
+<link rel="stylesheet" href="style.css">/* style.css contain body{background-color:gray;font-size=130px;} in same working files */
+<style>
+
+h2 {
+  color: maroon;
+}
+
+</style>
+</head>
+<body>
+<h1>Style Placement</h1>
+<h2>Subheading 1</h2>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex et similique cupiditate dignissimos delectus nulla dolore, eos dolorum quidem excepturi, facere non repellat accusamus, atque? Id voluptate eos et accusantium.</p>
+<h2>Subheading 2</h2>
+<p style="text-align: center;">I am centered!</p>
+
+</body>
+</html>
+-->
+<!-- CASCADING ALGORITHM RULES -->
+<!-- MERGE FILE EXAMPLE -->
+<!--
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Cascade of CSS</title>
+<link rel="stylesheet" href="external.css">
+<style>
+
+p {
+  color: maroon;
+}
+
+</style>
+</head>
+<body>
+<h1>Origin Example</h1>
+<p>The rule is simple: last declaration wins.</p>
+<p style="color: black;">If there is no conflict, declarations merge into one rule.</p>
+</body>
+</html> 
+-->
+<!-- INHERITANCE EXAMPLE CASCADING ALGO -->
+<!--
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Inheritance in CSS</title>
+<style>
+body {
+  color: red;
+  text-align: center;
+  font-family: Helvetica;
+}
+p {
+  color: blue;
+}
+</style>
+</head>
+<body>
+<h1>Cascade of CSS Example</h1>
+<h2>Subheading 1</h2>
+<p>Inheritence allows us to write more global styles on parent elements and then "fine-tune" the styles for some of the child elements as needed. Such approach makes writing CSS very efficient.</p>
+<h2 style="color: green;">Subheading 2</h2>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto ad excepturi eveniet odio, fuga nam quidem reprehenderit placeat commodi? In laudantium cum nam quod vitae at eligendi consequatur sequi cumque.</p>
+</body>
+</html>
+-->
+<!-- Specificity rule -->
+<!--
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Inheritance in CSS</title>
+<style>
+header.navigation p {
+  color: blue;
+}
+p.blurb {
+  color: red !important;
+}
+p {
+  color: green;/* !important; /* the word !important overriding the specificity rule mean this is important */
+} 
+</style>
+</head>
+<body>
+<header class="navigation">
+  <p class="blurb">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero soluta enim aut! Nihil nam obcaecati, fugiat sint sit libero voluptate eos incidunt odio neque cum, dignissimos aperiam, magnam nisi debitis.</p>
+</header>
+</body>
+</html>
+-->
+<!-- STYLING TEXT -->
+<!--
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Styling Text</title>
+<style>
+.style {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #00ff00;  /* hexa decimal value of color first two zero is "RED" secont two zero is "GREEN" and last ff is "BLUE". */ /* 0000ff is a combination of RGB VALUE */ 
+  font-style: italic;
+  font-weight: bold;
+  font-size: 24px;
+  text-transform: uppercase;
+  text-align: right; 
+
+}
+</style>
+</head>
+<body>
+<p>You can get commonly used font combinations from <a target="_blank" href="http://www.w3schools.com/cssref/css_websafe_fonts.asp">http://www.w3schools.com/cssref/css_websafe_fonts.asp</a>. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam quod necessitatibus a ullam dolorum amet reprehenderit sit laudantium reiciendis aperiam. </p>
+<p class="style">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam fugiat repudiandae fugit porro commodi.</p>
+</body>
+</html> 
+-->
+<!-- BASED UPON FONT SIZE -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Setting Font Size</title>
+<style>
+body { /* for whole body the font size is 100% */
+  font-size: 100%;
+}
+</style>
+</head>
+<body>
+<div>Regular text</div>
+<div style="font-size: 2em;">2em text /*twice large of 120% */
+  <div style="font-size: 2em;">4em text /* 4 time largr of 2em means 4(2(120))=8*120% */
+    <div style="font-size: .5em;">2em again!</div> /* in this discreasing the font size */
+      
+  </div>
+</div>
+</body>
+</html>
