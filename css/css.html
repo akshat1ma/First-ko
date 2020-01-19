@@ -540,6 +540,7 @@ p {
 </html> 
 -->
 <!-- BASED UPON FONT SIZE -->
+<!--
 <!DOCTYPE html>
 <html>
 <head>
@@ -559,5 +560,500 @@ body { /* for whole body the font size is 100% */
       
   </div>
 </div>
+</body>
+</html>
+-->
+<!-- BOX MODEL PART 1 ===== -->
+<!--
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>The Box Model</title>
+<style>   
+*{ /* "*" is css selectors and it will apply this property is every element in body */
+    box-sizing: border-box; 
+    margin: 0;
+    padding: 0;
+} 
+
+body {
+  background-color: gray;
+}
+
+#box {
+  background-color: blue;
+    padding: 10px; /* first for "TOP" second for "RIGHT" third for "BOTTOM" four for "LEFT" */
+    border:5px solid black;/* size of "BORDER" and type of "BORDER" and third is color of "BORDER" */
+   /* margin:40px; /* MARGIN OF BOX */
+    width :300px;
+    margin-top: 40px; /* IN this margin-top > h1 margin so the top margin is 40% otherwise it will go to h1 margin */
+    height:70px;
+    overflow: auto; /* if content will overflow then use overflow method and use according to it */
+    
+    
+}
+#content {
+  background-color: #ffffff; //green
+}
+
+h1 {
+  margin-bottom: 30px;
+}
+
+</style>
+</head>
+<body>
+
+<h1>Box Model</h1>
+
+<div id="box">
+  <div id="content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit error quis ab perspiciatis eos inventore recusandae iste itaque numquam facilis, tenetur. Doloribus officiis quae facilis, nisi, ex similique. Animi, perferendis. 
+  </div>
+</div>
+
+
+</body>
+</html>
+-->
+<!-- BACKGROUND PROPERTY -->
+<!--
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Background</title>
+<style>
+#bg {
+  width: 500px;
+  height: 500px;
+  background-color: lawngreen;
+  background: url('yaakov.png') no-repeat right center lawngreen; /* Combination of color, repeat and image 
+property.We can write like this 
+    background-image:url();
+    background-repeat:no-repeat;
+    background-position:bottom; */
+}
+
+</style>
+</head>
+<body>
+<h1>The Background Property</h1>
+
+<div id="bg">Background properties are fun!</div>
+</body>
+</html>
+-->
+<!-- POSITIONING ELEMENT BY FLOATING -->
+<!--
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Floating Elements</title>
+<style>
+
+div {
+  background-color: #00FFFF;
+}
+p {
+  width: 50px;
+  height: 50px;
+  border: 1px solid black;
+  
+}
+
+#p1 {
+  background-color: #A52A2A;
+ /* float is used to sent the p1 content to the right or some direction */
+    float:left;
+    height:150px;
+
+}
+#p2 {
+  background-color: #DEB887;
+    float:right;
+    height:100px;
+}
+#p3 {
+  background-color: #5F9EA0;
+    clear:right;
+}
+#p4 {
+  background-color: #FF7F50;
+}
+
+section {
+  clear: left; /* sectoin will start from left */
+}
+
+</style>
+</head>
+<body>
+<h1>Floating Elements</h1>
+
+<div>
+  <p id="p1"></p>
+  <p id="p2"></p>
+  <p id="p3"></p>
+  <p id="p4"></p>
+  <section>This is regular content continuing after the the paragraph boxes.</section>
+</div>
+
+
+</body>
+</html>
+-->
+<!-- TWO COLUMN DESIGN -->
+<!--
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Two Column Design</title>
+<style>
+
+* {
+  box-sizing: border-box;
+}
+
+div {
+  /*background-color: #00FFFF;*/
+}
+p {
+  width: 50%;
+  /*border: 1px solid black;*/
+  float: left;
+  padding: 10px; 
+}
+
+#p1 {
+  /*background-color: #A52A2A;*/
+}
+#p2 {
+  /*background-color: #DEB887;*/
+}
+
+section {
+  clear: left;
+}
+
+</style>
+</head>
+<body>
+<h1>Two Column Design</h1>
+
+<div>
+  <p id="p1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia distinctio aliquid cupiditate perferendis fuga, sit quasi alias vero sunt non, ratione earum dolores nihil! Consequuntur pariatur totam incidunt soluta expedita.</p>
+  <p id="p2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta beatae voluptatibus veniam placeat iure unde assumenda porro neque voluptate esse sit magnam facilis labore odit, provident a ea! Nulla, minima.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius nemo vitae, cupiditate odio magnam reprehenderit esse eum reiciendis repellendus incidunt sequi! Autem, laudantium, accusamus. Doloribus tempora alias minima laborum, provident!</p>
+  <section>This is regular content continuing after the the paragraph boxes.</section>
+</div>
+
+
+</body>
+</html>
+-->
+<!-- RElATIVE AND ABSOLUTE ELEMENT POSITIONONG -->
+<!--
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Positioning Elements</title>
+<style>
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+h1 {
+  margin-bottom: 15px;
+}
+
+div#container {
+  background-color: #00FFFF;
+  position: relative;
+  top: 60px; 
+}
+p {
+  width: 50px;
+  height: 50px;
+  border: 1px solid black;
+  margin-bottom: 15px;
+}
+#p1 {
+  background-color: #A52A2A;
+    position:relative;
+    top:65px; /* From top 65 pixel */
+    left:65px; /* From left 65 pixel */
+  
+}
+#p2 {
+  background-color: #DEB887;
+}
+#p3 {
+  background-color: #5F9EA0;
+    position :absolute;
+    top:0;
+    left:0;
+
+}
+#p4 {
+  background-color: #FF7F50;
+}
+
+</style>
+</head>
+<body>
+<h1>Positioning Elements</h1>
+
+<div id="container">
+  <p id="p1"></p>
+  <p id="p2"></p>
+  <p id="p3"></p>
+  <p id="p4"></p>
+</div>
+
+</body>
+</html> 
+-->
+<!-- MEDIA QUARIES -->
+<!--
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Media Queries</title>
+<style>
+
+/********** Base styles **********/
+h1 {
+  margin-bottom: 10px;
+}
+
+p {
+  border: 1px solid black;
+  margin-bottom: 15px;
+}
+#p1 {
+  background-color: #A52A2A;
+  width: 300px;
+  height: 300px;
+}
+#p2 {
+  background-color: #DEB887;
+  width: 50px;
+  height: 50px;
+}
+
+/********** Large devices only **********/
+@media (min-width: 1200px) {
+  #p1 {
+    width: 80%;
+  }
+  #p2 {
+    width: 150px;
+    height: 150px;
+  }
+}
+
+
+/********** Medium devices only **********/
+@media (min-width: 992px) and (max-width: 1199px) {
+  #p1 {
+    width: 50%;
+  }
+  #p2 {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+
+</style>
+</head>
+<body>
+<h1>Media Queries</h1>
+
+<p id="p1"></p>
+<p id="p2"></p>
+
+</body>
+</html> 
+-->
+
+
+<!-- RESPONSIVE DESIGN -->
+<!-- Simple tells that how to design a website which runs in computer as well as in mobile devices so 12 column grin responsive layout is used here -->
+<!--
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- above meta tag tells that the browser will not zoom the size of the site and or set it's zoom level t0 1,i.e., 100%, so it's not zoomed in or zoomed out. --> <!--
+<title>Responsive Layout</title>
+<style>
+
+/********** Base styles **********/
+* {
+  box-sizing: border-box;
+}
+h1 {
+  margin-bottom: 15px;
+}
+
+p {
+  border: 1px solid black;
+  background-color: #A52A2A;
+  width: 90%;
+  height: 150px;
+  margin-right: auto;
+  margin-left: auto;
+  font-family: Helvetica;
+  color: white;
+}
+
+/* Simple Responsive Framework. */
+.row {
+  width: 100%;
+}
+
+/********** Large devices only **********/
+@media (min-width: 1200px) {
+  .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12 {
+    float: left;
+    border: 1px solid green;
+  }
+  .col-lg-1 {
+    width: 8.33%;
+  }
+  .col-lg-2 {
+    width: 16.66%;
+  }
+  .col-lg-3 {
+    width: 25%;
+  }
+  .col-lg-4 {
+    width: 33%;
+  }
+  .col-lg-5 {
+    width: 41.66%;
+  }
+  .col-lg-6 {
+    width: 50%;
+  }
+  .col-lg-7 {
+    width: 58.33%;
+  }
+  .col-lg-8 {
+    width: 66.66%;
+  }
+  .col-lg-9 {
+    width: 74.99%;
+  }
+  .col-lg-10 {
+    width: 83.33%;
+  }
+  .col-lg-11 {
+    width: 91.66%;
+  }
+  .col-lg-12 {
+    width: 100%;
+  }
+}
+
+/********** Medium devices only **********/
+@media (min-width: 950px) and (max-width: 1199px) {
+  .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
+    float: left;
+    border: 1px solid green;
+  }
+  .col-md-1 {
+    width: 8.33%;
+  }
+  .col-md-2 {
+    width: 16.66%;
+  }
+  .col-md-3 {
+    width: 25%;
+  }
+  .col-md-4 {
+    width: 33%;
+  }
+  .col-md-5 {
+    width: 41.66%;
+  }
+  .col-md-6 {
+    width: 50%;
+  }
+  .col-md-7 {
+    width: 58.33%;
+  }
+  .col-md-8 {
+    width: 66.66%;
+  }
+  .col-md-9 {
+    width: 74.99%;
+  }
+  .col-md-10 {
+    width: 83.33%;
+  }
+  .col-md-11 {
+    width: 91.66%;
+  }
+  .col-md-12 {
+    width: 100%;
+  }
+}
+
+</style>
+</head>
+<body>
+<h1>Responsive Layout</h1>
+
+<div class="row">
+  <div class="col-lg-3 col-md-6"><p>Item 1</p></div>
+  <div class="col-lg-3 col-md-6"><p>Item 2 Wow this is cool</p></div>
+  <div class="col-lg-3 col-md-6"><p>Item 3</p></div>
+  <div class="col-lg-3 col-md-6"><p>Item 4</p></div>
+  <div class="col-lg-3 col-md-6"><p>Item 5 This is cool</p></div>
+  <div class="col-lg-3 col-md-6"><p>Item 6</p></div>
+  <div class="col-lg-3 col-md-6"><p>Item 7</p></div>
+  <div class="col-lg-3 col-md-6"><p>Item 8</p></div>
+</div>
+
+</body>
+</html>
+
+-->
+<!-- ===============TWITTER BOOTSTRAP======================= -->
+<!-- ======================1=============================== -->
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <title>Boostrap Starter Page</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+  </head>
+<body>
+
+  <h1>Hello Coursera!</h1>
+
+  <!-- jQuery (Bootstrap JS plugins depend on it) -->
+  <script src="js/jquery-1.11.3.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/script.js"></script>
 </body>
 </html>
